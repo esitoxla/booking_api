@@ -12,7 +12,7 @@ app.use(express.json())
 //define route
 app.use(bookingRouter);
 
-await mongoose.connect(process.env.MONGO_URI);
+await mongoose.connect(process.env.MONGO_URl);
 
 //listen for incoming request
 app.listen(3001,() => {
