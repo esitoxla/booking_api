@@ -2,13 +2,13 @@ import { Schema, model } from "mongoose";
 
 //creting a schema
 const bookingSchema = new Schema({
-    firstName: {
+    firstname: {
         type: String,
         //required: true,
     },
   
 
-  lastName: {
+  lastname: {
     type: String,
     //required: true,
   },
@@ -21,7 +21,7 @@ const bookingSchema = new Schema({
     //required: true,
   },
 
-  seatNumber: {
+  seatnumber: {
     type: Number,
     //unique: true,
     //required: true,

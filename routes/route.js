@@ -1,6 +1,6 @@
 
 import { Router } from 'express'
-import {getAllBookings, getOneBooking,  addBooking, updateBooking, deleteBooking} from '../controllers/booking.controllers.js'
+import {getAllBookings, getOneBooking,  addBooking, updateBooking, deleteBooking} from '../controllers/booking.js'
 
 
 export const bookingRouter = Router()
