@@ -1,6 +1,6 @@
 import Joi from "joi"
 
-export const registerUserValidator = Joi.objectbject ({
+export const registerUserValidator = Joi.object ({
     firstname: Joi.string(),
     lastname: Joi.string(),
     email: Joi.string().email().required(),

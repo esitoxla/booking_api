@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getUserProfile, loginUser, logoutUser, registerUser } from "../controllers/users";
+import { getUserProfile, loginUser, logoutUser, registerUser } from "../controllers/users.js";
 
 
 const userRouter = Router();
@@ -11,3 +11,5 @@ userRouter.post("/users/login", loginUser);
 userRouter.get("/users/me", getUserProfile);
 
 userRouter.post("/users/logout", logoutUser);
+
+export default userRouter;

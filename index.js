@@ -1,5 +1,6 @@
 import express from 'express';
-import { bookingRouter } from './routes/route.js';
+import { bookingRouter } from "./routes/booking.js";
+import userRouter from './routes/users.js';
 import mongoose from 'mongoose';
 import "dotenv/config";
 import cors from 'cors'
@@ -10,7 +11,7 @@ app.use(cors())
 app.use(express.json())
 
 //define route
-app.use(bookingRouter);
+app.use(bookingRouter,userRouter);
 
 await mongoose.connect(process.env.MONGO_URI);
 
